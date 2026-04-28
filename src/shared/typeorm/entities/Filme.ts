@@ -21,4 +21,8 @@ export default class Filme {
   synopsis: string;
   @Column('text')
   lead_actors: string;
+  @CreateDateColumn()
+  created_at: Date;
+  @UpdateDateColumn()
+  updated_at: Date;
 }
